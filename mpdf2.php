@@ -23,7 +23,7 @@ $data = mysqli_fetch_assoc($namaSiswa);
 $navbarID = $data["kelas_id"];
 $navbar= show("SELECT mapel.* FROM siswa JOIN mapel_kelas ON mapel_kelas.kelas = siswa.kelas_id JOIN guru ON guru.id = mapel_kelas.guru JOIN mapel ON mapel.id = guru.mapel_id WHERE siswa.user_id = $userID ORDER BY nama_mapel ASC");
 
-foreach($navbar as $mapel) {
+/* foreach($navbar as $mapel) {
     //nama Guru
     $idmapel = $mapel["id"] ;
     $namaGuru = show("SELECT nama_guru FROM guru WHERE mapel_id = $idmapel")[0];
@@ -32,11 +32,26 @@ foreach($navbar as $mapel) {
     //jumlahTugas
     $tugas = show("SELECT nilai FROM jawaban WHERE siswa = $idSiswa AND mapel = $idmapel");
     
-}
+} */
 
 $t = 1;
+$i = 0;
 
-var_dump($namaGuru["nama_guru"]);
+/* var_dump($namaGuru["nama_guru"]); */
+
+for($i; $i < count($navbar); $i++) {
+     $idmapel = $navbar[$i]["id"] ;
+    $namaGuru[$i] = show("SELECT nama_guru FROM guru WHERE mapel_id = $idmapel")[0];
+
+   var_dump($idmapel);
+
+    
+}
+
+//var_dump($namaGuru);
+var_dump($idmapel);
+
+///var_dump($namaGuru[0]["nama_guru"]);
 
 
 $html = '<!DOCTYPE html>
@@ -101,7 +116,37 @@ $html .='<div class="col-lg-12 px-3 py-2 nilai">
     <h4>Nilai Siswa</h4>
 </div>';
 
-foreach ($navbar as $mapel) {
+for ($a = 0; $a < count($navbar) ; $a ++) {
+    $html .= ' <div class="table-nilai px-3 my-4">
+                                    <h5 class="mt-3 mb-0">' . $navbar[$a]["nama_mapel"] . '</h5>
+
+                                    <span style="font-family:Roboto Consended;">' . $namaGuru[$a]["nama_guru"] . '</span>
+
+                                    <table width="100%" class="mx-auto table table-bordered">';
+
+                                       $html .= ' <tr>';
+
+                                       $idSiswa = $data["id"];
+                                       //jumlahTugas
+                                       $tugas = show("SELECT nilai FROM jawaban WHERE siswa = $idSiswa AND mapel = $idmapel");
+
+    for ($j = 0; $j < count($tugas); $j++) {
+        $html .= ' <th class="px-3 text-center">Tugas '.$t.'</th> ';
+        $t ++;
+    }
+    $html .= '<tr>';
+    for ($k = 0; $k < count($tugas); $k++) {
+        $html .=  '<td class="p-3">' . $tugas[$k]["nilai"] . '</td>';
+    }
+
+    $html .= ' </tr>
+                                    </table>
+                                </div>';
+
+}
+
+/* foreach ($navbar as $mapel) {
+
 
     $html .= ' <div class="table-nilai px-3 my-4">
                                     <h5 class="mt-3 mb-0">' . $mapel["nama_mapel"] . '</h5>
@@ -122,7 +167,9 @@ foreach ($navbar as $mapel) {
     $html .= ' </tr>
                                     </table>
                                 </div>';
-}
+
+    
+} */
 
 
 $html .= '
@@ -137,6 +184,7 @@ $html .= '
 </body>
 </html>';
 
+var_dump($html);
 /* $mpdf = new \Mpdf\Mpdf();
 $mpdf->WriteHTML($html);
 $mpdf->Output(); */
