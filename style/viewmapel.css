@@ -1,0 +1,34 @@
+.container {
+    background-color: #f8f8f8;
+}
+
+.container p {
+    font-family: 'Roboto Condensed';
+    font-weight: normal;
+    width: fit-content;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+}
+
+h3 {
+    width: fit-content;
+    font-family: 'Merriweather';
+    font-weight: bolder;
+}
+
+.list-tugas h4 {
+    font-family: 'Merriweather';
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.accordion-body p {
+    font-family: 'Roboto Condensed';
+}
+
+.link-tugas {
+    font-family: 'Roboto Condensed';
+    text-decoration: none;
+}

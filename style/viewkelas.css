@@ -1,0 +1,53 @@
+/*------------HEADER---------- */
+
+.main-container {
+    background-color: #f8f8f8;
+}
+
+.header {
+    border-radius: 25px;
+    background-color: #FFFF;
+}
+
+.header span {
+    font-family: 'Roboto Condensed';
+}
+
+.header table td {
+    font-family: "Roboto Condensed";
+    font-size: 20px;
+}
+
+.header table td a {
+    text-decoration: none;
+}
+
+/*------------ BODY---------- */
+.body h4, .header h4 {
+    font-family: 'Merriweather';
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.accordion-body p {
+    font-family: 'Roboto Condensed';
+}
+
+.link-tugas, .link-delete {
+    font-family: 'Roboto Condensed';
+    text-decoration: none;
+}
+
+.link-delete {
+    color: red;
+}
+
+.body .d-flex {
+    justify-content: flex-end;
+}
+
+/*------------ FOOTER ------------*/
+
+.footer {
+    justify-content: flex-end;
+}

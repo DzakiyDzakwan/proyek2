@@ -1,0 +1,21 @@
+.form-container {
+	background-color: #f8f8f8;
+}
+
+form {
+	width: 70%;
+}
+
+.title-form {
+	font-family: 'Merriweather';
+	font-weight: bolder;
+	width: 70%;
+}
+
+table tr td label {
+	font-family: 'Roboto Condensed';
+}
+
+table tr td input {
+	font-family: 'Roboto Condensed';
+}

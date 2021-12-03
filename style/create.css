@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.create-container {
+    background-color: #f8f8f8;
+}
+
+.create-form h2 {
+    font-family: 'Merriweater';
+    font-weight: 900;
+}
+
+form {
+    width: 40%;
+    background-color: #FFF;
+    border-radius: 50px;
+}
+
+table {
+    width: 100%;
+}
+
+table tr td {
+    padding: 7px 10px;
+}
+
+table tr td label {
+    font-family: 'Merriweather';
+    font-weight: bold;
+}
+
+table tr td input, table tr td option {
+    font-family: 'Roboto Condensed';
+}

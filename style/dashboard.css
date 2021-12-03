@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title-text h2 {
+    font-family: 'Roboto Condensed';
+    font-weight: bold;
+}
+
+.card {
+    background-color: #f8f8f8;
+}
+
+.card .card-title {
+    font-family: 'Merriweather';
+    font-weight: bold;
+}
+
+.card .card-text {
+    font-family: 'Roboto Condensed';
+}
+
+.filter-class h3 {
+    font-family: 'Merriweather';
+    font-weight: bolder;
+}

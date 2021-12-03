@@ -1,0 +1,59 @@
+* {
+	margin : 0;
+    padding: 0;
+	box-sizing: border-box;
+
+}
+
+.row {
+    align-items: center;
+}
+
+.icon-section {
+    display: flex;
+    justify-content: center;
+}
+
+.title-section {
+    text-align: center;
+}
+
+ h2 {
+    font-weight: 900;
+    font-family: 'Dancing Script', cursive;
+    color: #1E7B40;
+}
+
+.icon-section h2{
+    text-align: center;
+}
+
+.hero-icon {
+    width: 100%;
+    max-width: 75%;
+}
+
+table {
+    width: 70%;
+}
+
+table tr td {
+    padding: 7px 10px;
+}
+
+table tr td label {
+    font-family: 'Merriweather';
+    font-weight: bold;
+}
+
+table tr td input, table tr td option {
+    font-family: 'Roboto Condensed';
+}
+
+form {
+    height: 100%;
+}
+
+.remember {
+    justify-content: space-between;
+}

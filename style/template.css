@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* table mahasiswa */
+
+.d-flex {
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    margin: 0 20px;
+}
+
+.table-data {
+    background-color: #f8f8f8;
+}
+
+.search .form-control {
+    margin: 0 20px;
+}
+
+.form-control {
+    max-width: 500px;
+    width: 100%;
+}
+
+.table-data table {
+    width: 50%;
+    text-align: center;
+}
+
+.table-data .table-title {
+    display: flex;
+    justify-content: center;
+}
+
+.table-data .table-title h4 {
+    margin-left :20px;
+    text-align: center;
+    font-family: 'Merriweater';
+    font-weight: 900;
+}
+
+.table-data .table-title i {
+    height: 20px;
+}
+
+.table-data table button {
+    width: 80px;
+}
+
+.table-data .thead {
+    font-family: 'Merriweater', serif !important;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+th, td {
+    padding: 10px 5px;
+    /* border: 1px solid; */
+}
+
+.table-data td a {
+    width: 80px;
+}
+
+/* .table-data .table-header {
+    border: 1px solid;
+} */
+
+.table-data .table-body {
+    font-family: 'Roboto Condensed', sans-serif;;
+}
+
+/*---------------- Pagination------------ */
+
+.new-pagination {
+    width: 50% !important;
+    font-family: 'Roboto Condensed';
+}

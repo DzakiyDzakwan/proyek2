@@ -1,0 +1,35 @@
+.biodata table tr .data-title {
+    font-family: 'Merriweather';
+    font-weight: bold;
+}
+
+.biodata table tr .data {
+    font-family: 'Roboto Condensed';
+}
+
+.form-container {
+    background-color: #f8f8f8;
+}
+
+.title-form-2, .title-form {
+    width: 200px;
+    font-family: 'Merriweather';
+    font-weight: bolder;
+}
+
+.nilai table, .nilai th, .nilai td {
+    border: 1px solid;
+}
+
+.nilai .table-nilai h5 {
+    font-family: 'Merriweather';
+}
+
+.nilai td {
+    text-align: center !important;
+    font-family: 'Roboto Condensed';
+}
+
+.print-button {
+    text-align: center;
+}

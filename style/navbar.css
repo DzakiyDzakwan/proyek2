@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #f8f8f8;
+    height: 70px;
+}
+
+
+.navbar-brand {
+    text-align: center;
+    font-weight: 900 !important;
+    font-size : 26px;
+    margin: 0;
+    padding: 0 20px;
+    font-family: 'Dancing Script';
+    color: #1E7B40 !important;
+}
+
+.navbar .logo {
+    display: flex;
+    text-align: center;
+}
+
+.navbar .login-register  {
+    flex-grow: 0;
+    font-family: 'Merriweather';
+    font-weight: bolder;
+}
+
+.navbar .login-register .dropdown-menu {
+    left: -10px;
+    font-family: 'Roboto Condensed';
+}
+

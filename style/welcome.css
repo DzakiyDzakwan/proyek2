@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.registerbanner {
+    width: 100%;
+}
+
+.welcome-sentence {
+    width: 80%;
+    font-family: 'Roboto Condensed';
+    font-size: 20px;
+}
+
+.welcome-sentence .logo {
+    font-family: 'Dancing Script';
+    font-size: 24px;
+    font-weight: bolder;
+    color: #1E7B40;
+}
+
+.welcome-register table {
+    width: 50%;
+}
+
+.welcome-register table tr td {
+    padding: 10px;
+}
+
+table tr td label {
+    font-family: 'Merriweather';
+    font-weight: bold;
+}
+
+
+table tr td input, table tr td option {
+    font-family: 'Roboto Condensed';
+}
